@@ -9,7 +9,7 @@ public class task02 {
                 Scanner inter = new Scanner(System.in);
                 int number = inter.nextInt();
                 if (number > 2) {
-                    System.out.printf("Простые числа от 1 до %d >>> 2 ", number);
+                    System.out.printf("Простые числа от 1 до %d >>> 2 ", number); // число 1 не является ни простым, ни составным
                     for (int i = 3; i <= number; i += 2) {
                         if (checkPrimeNumber(i)) {
                             System.out.printf("%d ", i);
@@ -33,7 +33,7 @@ public class task02 {
 
         }
     }
-
+    // проверка является ли число простым
     static boolean checkPrimeNumber(int num) {
         if (1 < num && num <= 3) {
             return true;
